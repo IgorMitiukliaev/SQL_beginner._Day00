@@ -14,6 +14,6 @@ FROM person,
                 OR menu_id = 14
                 OR menu_id = 18
             )
-            OR (order_date = '2022-01-07')
+            AND (order_date = '2022-01-07')
     ) AS sub
 WHERE person.id = sub.person_id;
